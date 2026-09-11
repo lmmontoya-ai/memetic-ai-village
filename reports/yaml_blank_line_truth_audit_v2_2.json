@@ -1,0 +1,39 @@
+{
+  "audit_id": "yaml_blank_line_atomic_syntax_claim_v2_2",
+  "atomic_proposition": "The blank line between env: and its value breaks the YAML syntax.",
+  "matching_fixed_claim_pair_ids": [
+    "pair_v2_2_544d3d92671d4748dbfacccf",
+    "pair_v2_2_e2941cff0feac620941c79f2",
+    "pair_v2_2_e966381ddf5cb958140d24e3"
+  ],
+  "truth_status": "verified_false",
+  "ground_truth_source_rank": 2,
+  "ground_truth_source": "deterministic_reproduction_with_preserved_claim_text",
+  "verification_procedure": {
+    "parser": "PyYAML safe_load",
+    "parser_version": "6.0.3",
+    "input": "env:\n\n  SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}\n",
+    "parsed_value": {
+      "env": {
+        "SLACK_WEBHOOK_URL": "${{ secrets.SLACK_WEBHOOK_URL }}"
+      }
+    },
+    "expected_value": {
+      "env": {
+        "SLACK_WEBHOOK_URL": "${{ secrets.SLACK_WEBHOOK_URL }}"
+      }
+    },
+    "input_sha256": "aa6c2abad5558af3d70b664b0e137ae453fed67140f35b4bd605244bf375778e",
+    "result": "The blank line is accepted and the indented value remains nested under env."
+  },
+  "artifact_specific_root_cause_status": "unknown",
+  "artifact_specific_limitation": "The exact netlify_deploy.yml bytes at commit 15f352c are not preserved in the local export. This audit therefore falsifies the general syntax claim but does not by itself identify every defect in that workflow revision.",
+  "non_oracle_trace_corroboration": {
+    "source_event_id": "ev_cdca0989d8add00bf6690b4a",
+    "response_event_id": "ev_2f21a12c0a426812622bed8c",
+    "later_trace_event_id": "ev_1140e81cfb0f05edcf50c5e9",
+    "note": "A later session summary calls a blank line acceptable and attributes a subsequent failure to run-key indentation. This is consistent with the reproduction but was not used as decisive ground truth."
+  },
+  "causal_peer_influence_assessed": false,
+  "holdout_semantics_opened": false
+}

@@ -1,0 +1,16 @@
+{
+  "status": "fail",
+  "checks": {
+    "spec_exists": true,
+    "holdout_plan_exists": true,
+    "codebook_exists": true,
+    "stage_a_packet_count_is_60": true,
+    "freeze_record_exists": true,
+    "frozen_hashes_match": false,
+    "truth_absent_from_stage_a": true,
+    "stage_a_still_blank": true,
+    "stage_a_event_ids_complete": true,
+    "observable_method_diversity_used": true,
+    "holdout_unopened": true
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "plan_version": "2.2",
+  "frozen_before_semantic_opening": true,
+  "holdout_semantic_content_opened": false,
+  "main_independent_unit": "episode_cluster",
+  "samples": {
+    "broad_lexical_primary": {
+      "target_k": 20,
+      "precision_target": "L1_proposition_recurrence"
+    },
+    "source_linked_epistemic_primary": {
+      "target_k": 20,
+      "eligible_subtypes": [
+        "agent_attribution_or_claim_reference",
+        "unique_discourse_reference"
+      ],
+      "precision_target": "L2_source_linked_recurrence"
+    },
+    "matched_controls": {
+      "target_k": 40,
+      "one_per_primary_candidate_where_available": true,
+      "report_hard_and_ordinary_separately": true
+    },
+    "placebos": {
+      "target_k": 10,
+      "temporal_target_k": 5,
+      "source_identity_target_k": 5
+    },
+    "directive_auxiliary": {
+      "target_k": 10,
+      "pooled_with_epistemic": false
+    },
+    "artifact_handoff_auxiliary": {
+      "target_k": 10,
+      "pooled_with_epistemic": false
+    }
+  },
+  "caps": {
+    "all_units_per_episode_cluster": 6,
+    "primary_candidates_per_episode_cluster": 2,
+    "controls_per_episode_cluster": 2,
+    "auxiliary_or_placebo_units_per_episode_cluster": 2,
+    "all_units_per_source_agent": 10,
+    "all_units_per_recipient_agent": 10
+  },
+  "deduplication": {
+    "key": ["source_event_id", "response_event_id"],
+    "cross_channel_priority": [
+      "source_linked_epistemic_primary",
+      "broad_lexical_primary",
+      "directive_auxiliary",
+      "artifact_handoff_auxiliary",
+      "matched_controls",
+      "placebos"
+    ],
+    "broad_overlap_replacement": "next_frozen_rank_satisfying_all_caps",
+    "multiple_claims_per_event_pair": "retain_all_stage_b_pairs_but_aggregate_to_one_episode_level_unit"
+  },
+  "shortfall_policy": "Use every qualifying unit under frozen rules and report achieved K; never relax thresholds or caps after semantic inspection.",
+  "report_counts": [
+    "unique_episode_clusters",
+    "unique_atomic_claims",
+    "unique_artifacts",
+    "unique_source_agents",
+    "unique_recipient_agents"
+  ],
+  "control_comparisons": [
+    "candidates_vs_all_controls",
+    "candidates_vs_hard_same_artifact_or_code_controls",
+    "candidates_vs_ordinary_local_controls",
+    "candidates_vs_placebos"
+  ],
+  "known_incidents_in_primary_estimates": false,
+  "one_shot_rule": "No codebook, threshold, sample, control, channel, or label-rule changes after holdout annotation begins."
+}

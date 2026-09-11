@@ -1,0 +1,13 @@
+The MIT license applies to original project code and documentation.
+
+AI Digest / AI Village owns or provides the upstream dataset under separate
+AI Village research terms. The MIT license does not relicense that dataset,
+agent transcripts, screenshots, or third-party excerpts reproduced in research
+materials. See docs/dataset_restrictions.md and the upstream dataset card:
+https://huggingface.co/datasets/aidigestorg/ai-village
+
+Dataset credit: AI Digest, "AI Village dataset", 2026.
+https://theaidigest.org/village
+
+This is independent research by Luis Miguel Montoya Henao. Repository review
+by AI Digest does not imply endorsement of its findings or methodology.

@@ -1,0 +1,9 @@
+{
+  "policy": "first 80% of chronologically ordered canonical event records is discovery; final 20% is holdout",
+  "minimum": "2025-04-02T00:00:00Z",
+  "maximum": "2026-07-25T00:09:26.406733Z",
+  "cutoff": "2026-06-29T21:09:13.307527Z",
+  "content_inspected_to_choose_cutoff": false,
+  "canonical_rows": 2567830,
+  "holdout_rows": 513567
+}

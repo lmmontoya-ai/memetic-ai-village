@@ -1,0 +1,114 @@
+{
+  "dataset_id": "aidigestorg/ai-village",
+  "revision": "504ae8dc5fd254917c4ccbb071d932ad93b3584c",
+  "upstream_last_modified": "2026-07-26T11:44:27+00:00",
+  "retrieved_at_utc": "2026-08-14T05:02:42.688721+00:00",
+  "scope": "all exported JSONL tables and documentation; transcript and screenshots excluded",
+  "random_seed": 20260814,
+  "software": {
+    "python": "3.11.15",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "duckdb": "1.5.5",
+    "pyarrow": "21.0.0"
+  },
+  "files": [
+    {
+      "path": "agent_goals.jsonl.gz",
+      "bytes": 3186,
+      "sha256": "b4f9999c441cb949a65825cef730649b822961ed031c0a489e2f22cabf69a727",
+      "upstream_sha256": "b4f9999c441cb949a65825cef730649b822961ed031c0a489e2f22cabf69a727",
+      "row_count": 27
+    },
+    {
+      "path": "agent_memories.jsonl.gz",
+      "bytes": 1683860257,
+      "sha256": "a6a0550540e33ceb4aa9c47756723b06f43097ef2b5708dc279a8345c817736e",
+      "upstream_sha256": "a6a0550540e33ceb4aa9c47756723b06f43097ef2b5708dc279a8345c817736e",
+      "row_count": 202550
+    },
+    {
+      "path": "agents.jsonl.gz",
+      "bytes": 4795,
+      "sha256": "87be1d94ec05fa80188fd308a423358c700bdbe8bc37b1ebefe52e15151569be",
+      "upstream_sha256": "87be1d94ec05fa80188fd308a423358c700bdbe8bc37b1ebefe52e15151569be",
+      "row_count": 41
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 21299,
+      "sha256": "7c28848f0f39f2a4650f8059b836e1a54250e58f7501406f8146f2496c116175",
+      "upstream_sha256": null,
+      "row_count": null
+    },
+    {
+      "path": "chat_messages.jsonl.gz",
+      "bytes": 42697882,
+      "sha256": "a3e9319ca46e435b1eeabe632022530d1c2e015d74c9e226a37b685ce05a6c29",
+      "upstream_sha256": "a3e9319ca46e435b1eeabe632022530d1c2e015d74c9e226a37b685ce05a6c29",
+      "row_count": 150349
+    },
+    {
+      "path": "chat_rooms.jsonl.gz",
+      "bytes": 1624,
+      "sha256": "d5eebb5bd312d001f4959465a3686122312247abfa5a6d0a42479687e4be5030",
+      "upstream_sha256": "d5eebb5bd312d001f4959465a3686122312247abfa5a6d0a42479687e4be5030",
+      "row_count": 15
+    },
+    {
+      "path": "claude_code_messages.jsonl.gz",
+      "bytes": 104002877,
+      "sha256": "6b41f56bce687880b90dfa69587c7610f8fffc0e91e1ca3a0bed8e0b87838e95",
+      "upstream_sha256": "6b41f56bce687880b90dfa69587c7610f8fffc0e91e1ca3a0bed8e0b87838e95",
+      "row_count": 244820
+    },
+    {
+      "path": "claude_code_sessions.jsonl.gz",
+      "bytes": 12662,
+      "sha256": "32ebd626ec178d278fdc0ecc24c66a5931aab564db89878ee2789096c3ffe654",
+      "upstream_sha256": "32ebd626ec178d278fdc0ecc24c66a5931aab564db89878ee2789096c3ffe654",
+      "row_count": 303
+    },
+    {
+      "path": "computer_use_sessions.jsonl.gz",
+      "bytes": 25889583,
+      "sha256": "e6b43514677bb2e0700fcd157942db4ca0413b439afe85f90a9f86cd1630fdb2",
+      "upstream_sha256": "e6b43514677bb2e0700fcd157942db4ca0413b439afe85f90a9f86cd1630fdb2",
+      "row_count": 56033
+    },
+    {
+      "path": "computer_use_turns.jsonl.gz",
+      "bytes": 1405442137,
+      "sha256": "3833adc0bd92586d81846247b16de8b92412538215abf5c67360c07d59b3b77e",
+      "upstream_sha256": "3833adc0bd92586d81846247b16de8b92412538215abf5c67360c07d59b3b77e",
+      "row_count": 1767130
+    },
+    {
+      "path": "events.jsonl.gz",
+      "bytes": 225303900,
+      "sha256": "d75071bd2e78fe5602ac2a9dbb9aa2f1e30f6df51e423d83f5c79110224e0aae",
+      "upstream_sha256": "d75071bd2e78fe5602ac2a9dbb9aa2f1e30f6df51e423d83f5c79110224e0aae",
+      "row_count": 296835
+    },
+    {
+      "path": "example.py",
+      "bytes": 1691,
+      "sha256": "af38b153448e4ff73fba44ae5b35c6c73d0de1ec964439ace9008d477d070a3c",
+      "upstream_sha256": null,
+      "row_count": null
+    },
+    {
+      "path": "README.md",
+      "bytes": 14401,
+      "sha256": "facee6568bdcfd108766b7957d2ad1efe03683d49491d695862a4ff78b853ce5",
+      "upstream_sha256": null,
+      "row_count": null
+    },
+    {
+      "path": "SCHEMA.md",
+      "bytes": 17598,
+      "sha256": "8cbf978c6e057039a06042389fc13c0c8d93e7a6ab52d157520e899f7b0beb30",
+      "upstream_sha256": null,
+      "row_count": null
+    }
+  ]
+}

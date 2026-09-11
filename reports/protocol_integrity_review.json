@@ -1,0 +1,29 @@
+{
+  "status": "original_freeze_mismatch",
+  "review_date": "2026-09-11",
+  "original_freeze_record": "reports/pre_annotation_freeze_v2_2.json",
+  "original_freeze_hashes_preserved": true,
+  "mismatches": {
+    "annotations/v2_2/annotation_codebook_v2.2.md": {
+      "original_sha256": "824b9bb91e3890fcfb40d9b9208469defb6d9b8f5c55b3b31e302019d263e1c2",
+      "reviewed_sha256": "47f2d710de66e02cb3d6b1d76a40f90230914a5998f67b56357fbc094750e7b1"
+    },
+    "src/memetic_village/protocol_v2_2.py": {
+      "original_sha256": "f59826caeb53c1b6ac8da8aa35f868677f720286d17dcb2fa535f6f5d4e4d00e",
+      "reviewed_sha256": "d0257c3b65b2a7ca02735230567e9249578df4eaa10406d547b31291c2ffe478"
+    }
+  },
+  "unchanged_frozen_files": [
+    "research_spec_v2.2.md",
+    "docs/holdout_sampling_plan_v2.2.json"
+  ],
+  "interpretation": "The original v2.2 freeze is not satisfied. These hashes document files encountered during repository review; they do not retrospectively validate a pre-annotation freeze.",
+  "evidence": [
+    "The current codebook contains a development clarification dated 2026-08-17, also described in docs/decision_log.csv.",
+    "The current compiler contains unit-scoped claim and pair identifiers. The old compiler bytes have not been recovered in this review, so a complete diff against the original freeze is unavailable.",
+    "Both file modifications predate the September repository review. Line-ending normalization does not explain the mismatches.",
+    "The prior saved verification report said pass. Rerunning v2-2-verify now reports fail on frozen_hashes_match."
+  ],
+  "required_before_human_or_holdout_annotation": "Reconcile development amendments, preserve the original record, and version a corrected protocol before collecting new confirmatory labels.",
+  "holdout_semantic_content_inspected_in_repository_review": false
+}

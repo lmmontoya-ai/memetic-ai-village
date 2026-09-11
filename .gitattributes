@@ -1,0 +1,9 @@
+* text=auto eol=lf
+
+# The v2.2 freeze records byte hashes. Preserve the original bytes on every OS.
+research_spec_v2.2.md -text
+docs/holdout_sampling_plan_v2.2.json -text
+annotations/v2_2/annotation_codebook_v2.2.md -text
+src/memetic_village/protocol_v2_2.py -text
+
+*.png binary

@@ -1,0 +1,212 @@
+table,field,rows,present,missing,null,types,primary_key,interpretation
+agents,created_at,41,41,0,0,string,False,See pinned SCHEMA.md
+agents,current_computer_use_session_id,41,41,0,7,null|string,False,See pinned SCHEMA.md
+agents,current_human_use_session_request_id,41,41,0,39,null|string,False,See pinned SCHEMA.md
+agents,current_room_id,41,41,0,0,string,False,See pinned SCHEMA.md
+agents,emoji,41,41,0,0,string,False,See pinned SCHEMA.md
+agents,goal,41,41,0,41,null,False,See pinned SCHEMA.md
+agents,id,41,41,0,0,string,True,See pinned SCHEMA.md
+agents,input_tokens_used,41,41,0,0,integer,False,See pinned SCHEMA.md
+agents,is_participating,41,41,0,0,boolean,False,See pinned SCHEMA.md
+agents,is_paused_for_google_sign_in,41,41,0,0,boolean,False,See pinned SCHEMA.md
+agents,is_pending,41,41,0,0,boolean,False,See pinned SCHEMA.md
+agents,is_updating_memory,41,41,0,0,boolean,False,See pinned SCHEMA.md
+agents,last_seen_event_index,41,41,0,0,integer,False,See pinned SCHEMA.md
+agents,model_string,41,41,0,0,string,False,See pinned SCHEMA.md
+agents,money,41,41,0,0,string,False,See pinned SCHEMA.md
+agents,name,41,41,0,0,string,False,See pinned SCHEMA.md
+agents,output_tokens_used,41,41,0,0,integer,False,See pinned SCHEMA.md
+agents,paused_until,41,41,0,35,null|string,False,See pinned SCHEMA.md
+agents,paused_until_task_id,41,41,0,41,null,False,See pinned SCHEMA.md
+agents,status_message,41,41,0,41,null,False,See pinned SCHEMA.md
+agents,updated_at,41,41,0,0,string,False,See pinned SCHEMA.md
+agents,village_id,41,41,0,0,string,False,See pinned SCHEMA.md
+chat_rooms,blacklisted_agent_names,15,15,0,14,array|null,False,See pinned SCHEMA.md
+chat_rooms,created_at,15,15,0,0,string,False,See pinned SCHEMA.md
+chat_rooms,deleted_at,15,15,0,3,null|string,False,See pinned SCHEMA.md
+chat_rooms,id,15,15,0,0,string,True,See pinned SCHEMA.md
+chat_rooms,last_nudger_run_at,15,15,0,5,null|string,False,See pinned SCHEMA.md
+chat_rooms,last_nudger_run_chat_message_id,15,15,0,5,null|string,False,See pinned SCHEMA.md
+chat_rooms,name,15,15,0,0,string,False,See pinned SCHEMA.md
+chat_rooms,updated_at,15,15,0,0,string,False,See pinned SCHEMA.md
+chat_rooms,village_id,15,15,0,0,string,False,See pinned SCHEMA.md
+chat_rooms,whitelisted_agent_names,15,15,0,5,array|null,False,See pinned SCHEMA.md
+agent_goals,agent_id,27,27,0,0,string,False,See pinned SCHEMA.md
+agent_goals,created_at,27,27,0,0,string,False,See pinned SCHEMA.md
+agent_goals,description,27,27,0,23,null|string,False,See pinned SCHEMA.md
+agent_goals,end_time,27,27,0,27,null,False,See pinned SCHEMA.md
+agent_goals,id,27,27,0,0,string,True,See pinned SCHEMA.md
+agent_goals,name,27,27,0,0,string,False,See pinned SCHEMA.md
+agent_goals,short_name,27,27,0,0,string,False,See pinned SCHEMA.md
+agent_goals,start_time,27,27,0,0,string,False,See pinned SCHEMA.md
+agent_goals,updated_at,27,27,0,0,string,False,See pinned SCHEMA.md
+chat_messages,agent_speaker_id,150349,150349,0,9646,null|string,False,See pinned SCHEMA.md
+chat_messages,content,150349,150349,0,0,string,False,See pinned SCHEMA.md
+chat_messages,created_at,150349,150349,0,0,string,False,See pinned SCHEMA.md
+chat_messages,has_been_approved,150349,150349,0,140902,boolean|null,False,See pinned SCHEMA.md
+chat_messages,id,150349,150349,0,0,string,True,See pinned SCHEMA.md
+chat_messages,room_id,150349,150349,0,0,string,False,See pinned SCHEMA.md
+chat_messages,speaker_type,150349,150349,0,0,string,False,See pinned SCHEMA.md
+chat_messages,updated_at,150349,150349,0,0,string,False,See pinned SCHEMA.md
+chat_messages,user_speaker_id,150349,150349,0,140703,null|string,False,See pinned SCHEMA.md
+events,created_at,296835,296835,0,0,string,False,See pinned SCHEMA.md
+events,data,296835,296835,0,0,object,False,See pinned SCHEMA.md
+events,data.actionType,296835,296835,0,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+events,data.adminComment,296835,102,296733,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+events,data.agentId,296835,142777,154058,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+events,data.answerToQuery,296835,6392,290443,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+events,data.approval,296835,249,296586,0,boolean,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+events,data.chatMessageId,296835,9446,287389,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+events,data.computerUseSessionId,296835,55995,240840,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+events,data.content,296835,150348,146487,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+events,data.cost,296835,283480,13355,0,integer,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+events,data.currentRooms,296835,287,296548,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+events,data.endComment,296835,27,296808,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+events,data.endDay,296835,6390,290445,0,integer,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+events,data.endReason,296835,27,296808,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+events,data.estimatedDuration,296835,183,296652,0,integer,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+events,data.hasBeenApproved,296835,6824,290011,0,boolean,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+events,data.humanConstraints,296835,183,296652,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+events,data.humanUseSessionRequestId,296835,183,296652,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+events,data.inputTokens,296835,283480,13355,0,integer,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+events,data.medium,296835,508,296327,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+events,data.messageContent,296835,508,296327,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+events,data.messageId,296835,150348,146487,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+events,data.newName,296835,3710,293125,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+events,data.nextSessionGoal,296835,30020,266815,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+events,data.nextShortDisplayedSessionGoal,296835,29848,266987,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+events,data.oldName,296835,3710,293125,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+events,data.output,296835,176277,120558,0,array|object,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+events,data.outputTokens,296835,283480,13355,0,integer,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+events,data.outreachApprovalRequestId,296835,508,296327,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+events,data.previousRoomId,296835,287,296548,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+events,data.previousRoomName,296835,287,296548,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+events,data.query,296835,6392,290443,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+events,data.rationale,296835,508,296327,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+events,data.recipient,296835,508,296327,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+events,data.roomId,296835,211114,85721,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+events,data.roomName,296835,287,296548,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+events,data.seconds,296835,16467,280368,0,integer,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+events,data.sessionGoal,296835,26157,270678,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+events,data.shortDisplayedSessionGoal,296835,26146,270689,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+events,data.speakerId,296835,150348,146487,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+events,data.speakerName,296835,9645,287190,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+events,data.speakerType,296835,147725,149110,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+events,data.startDay,296835,6390,290445,0,integer,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+events,data.summary,296835,25966,270869,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+events,data.userId,296835,3710,293125,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+events,event_index,296835,296835,0,0,integer,False,See pinned SCHEMA.md
+events,id,296835,296835,0,0,string,True,See pinned SCHEMA.md
+events,updated_at,296835,296835,0,0,string,False,See pinned SCHEMA.md
+events,village_id,296835,296835,0,0,string,False,See pinned SCHEMA.md
+computer_use_sessions,agent_id,56033,56033,0,0,string,False,See pinned SCHEMA.md
+computer_use_sessions,created_at,56033,56033,0,0,string,False,See pinned SCHEMA.md
+computer_use_sessions,has_been_asked_to_stop,56033,56033,0,0,boolean,False,See pinned SCHEMA.md
+computer_use_sessions,id,56033,56033,0,0,string,True,See pinned SCHEMA.md
+computer_use_sessions,session_goal,56033,56033,0,1,null|string,False,See pinned SCHEMA.md
+computer_use_sessions,short_displayed_session_goal,56033,56033,0,184,null|string,False,See pinned SCHEMA.md
+computer_use_sessions,updated_at,56033,56033,0,0,string,False,See pinned SCHEMA.md
+computer_use_sessions,village_id,56033,56033,0,0,string,False,See pinned SCHEMA.md
+computer_use_turns,agent_action,1767130,1767130,0,52668,null|object,False,See pinned SCHEMA.md
+computer_use_turns,agent_action.action,1767130,1103827,663303,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_action.command,1767130,608276,1158854,1,null|string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_action.content,1767130,67565,1699565,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_action.coordinate,1767130,899993,867137,419709,array|null,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_action.description,1767130,112358,1654772,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_action.duration,1767130,6642,1760488,5830,integer|null,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_action.endDay,1767130,5661,1761469,11,integer|null,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_action.medium,1767130,259,1766871,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_action.query,1767130,5661,1761469,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_action.recipient,1767130,259,1766871,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_action.restart,1767130,151037,1616093,55771,boolean|null|string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_action.roomName,1767130,694,1766436,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_action.scrollAmount,1767130,6642,1760488,5299,integer|null,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_action.scrollDirection,1767130,6642,1760488,5299,null|string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_action.seconds,1767130,15832,1751298,0,integer,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_action.sessionGoal,1767130,54,1767076,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_action.shortDisplayedSessionGoal,1767130,54,1767076,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_action.startCoordinate,1767130,6642,1760488,6642,null,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_action.startDay,1767130,5661,1761469,8,integer|null,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_action.text,1767130,899993,867137,574644,null|string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_messages,1767130,1767130,0,0,array|object,False,See pinned SCHEMA.md
+computer_use_turns,agent_messages._sdkFormat,1767130,11679,1755451,0,boolean,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_messages.annotations,1767130,72313,1694817,0,array,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_messages.candidates,1767130,381856,1385274,0,array,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_messages.content,1767130,950793,816337,87833,array|null|string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_messages.id,1767130,677474,1089656,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_messages.model,1767130,677474,1089656,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_messages.modelVersion,1767130,371013,1396117,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_messages.reasoning,1767130,75581,1691549,54063,null|string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_messages.reasoning_content,1767130,105129,1662001,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_messages.reasoning_details,1767130,21518,1745612,0,array,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_messages.refusal,1767130,175063,1592067,175063,null,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_messages.responseId,1767130,300467,1466663,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_messages.role,1767130,950793,816337,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_messages.sdkHttpResponse,1767130,300467,1466663,0,object,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_messages.sdkHttpResponse.headers,1767130,300467,1466663,0,object,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_messages.stop_details,1767130,319662,1447468,319640,null|object,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_messages.stop_details.category,1767130,22,1767108,22,null,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_messages.stop_details.explanation,1767130,22,1767108,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_messages.stop_details.type,1767130,22,1767108,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_messages.stop_reason,1767130,677474,1089656,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_messages.stop_sequence,1767130,677474,1089656,677474,null,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_messages.textMessage,1767130,11679,1755451,0,object,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_messages.textMessage.error,1767130,1,1767129,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_messages.textMessage.message,1767130,11679,1755451,0,object,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_messages.textMessage.parent_tool_use_id,1767130,11679,1755451,11679,null,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_messages.textMessage.session_id,1767130,11679,1755451,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_messages.textMessage.type,1767130,11679,1755451,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_messages.textMessage.uuid,1767130,11679,1755451,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_messages.thinkingMessage,1767130,11679,1755451,0,object,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_messages.thinkingMessage.message,1767130,11679,1755451,0,object,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_messages.thinkingMessage.parent_tool_use_id,1767130,11679,1755451,11679,null,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_messages.thinkingMessage.session_id,1767130,11679,1755451,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_messages.thinkingMessage.type,1767130,11679,1755451,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_messages.thinkingMessage.uuid,1767130,11679,1755451,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_messages.tool_calls,1767130,265656,1501474,0,array,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_messages.type,1767130,677474,1089656,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_messages.usage,1767130,677474,1089656,0,object,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_messages.usage.cache_creation,1767130,600439,1166691,0,object,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_messages.usage.cache_creation_input_tokens,1767130,677474,1089656,0,integer,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_messages.usage.cache_read_input_tokens,1767130,677474,1089656,0,integer,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_messages.usage.inference_geo,1767130,433333,1333797,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_messages.usage.input_tokens,1767130,677474,1089656,0,integer,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_messages.usage.output_tokens,1767130,677474,1089656,0,integer,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_messages.usage.output_tokens_details,1767130,199005,1568125,0,object,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_messages.usage.service_tier,1767130,638825,1128305,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_messages.usageMetadata,1767130,371013,1396117,0,object,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_messages.usageMetadata.cacheTokensDetails,1767130,318868,1448262,0,array,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_messages.usageMetadata.cachedContentTokenCount,1767130,318868,1448262,0,integer,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_messages.usageMetadata.candidatesTokenCount,1767130,371013,1396117,0,integer,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_messages.usageMetadata.promptTokenCount,1767130,371013,1396117,0,integer,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_messages.usageMetadata.promptTokensDetails,1767130,371013,1396117,0,array,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_messages.usageMetadata.serviceTier,1767130,182223,1584907,0,string,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_messages.usageMetadata.thoughtsTokenCount,1767130,302190,1464940,0,integer,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,agent_messages.usageMetadata.totalTokenCount,1767130,371013,1396117,0,integer,False,See pinned SCHEMA.md; nested/provider fields remain unresolved
+computer_use_turns,created_at,1767130,1767130,0,0,string,False,See pinned SCHEMA.md
+computer_use_turns,error,1767130,1767130,0,1659307,null|string,False,See pinned SCHEMA.md
+computer_use_turns,has_redaction_been_overruled,1767130,1767130,0,923254,boolean|null,False,See pinned SCHEMA.md
+computer_use_turns,id,1767130,1767130,0,0,string,True,See pinned SCHEMA.md
+computer_use_turns,output,1767130,1767130,0,1064386,null|string,False,See pinned SCHEMA.md
+computer_use_turns,screenshot_is_redacted,1767130,1767130,0,0,boolean,False,See pinned SCHEMA.md
+computer_use_turns,session_id,1767130,1767130,0,0,string,False,See pinned SCHEMA.md
+computer_use_turns,system,1767130,1767130,0,1767130,null,False,See pinned SCHEMA.md
+computer_use_turns,updated_at,1767130,1767130,0,0,string,False,See pinned SCHEMA.md
+agent_memories,agent_id,202550,202550,0,0,string,False,See pinned SCHEMA.md
+agent_memories,content,202550,202550,0,0,string,False,See pinned SCHEMA.md
+agent_memories,created_at,202550,202550,0,0,string,False,See pinned SCHEMA.md
+agent_memories,id,202550,202550,0,0,string,True,See pinned SCHEMA.md
+agent_memories,updated_at,202550,202550,0,0,string,False,See pinned SCHEMA.md
+claude_code_sessions,agent_id,303,303,0,0,string,False,See pinned SCHEMA.md
+claude_code_sessions,created_at,303,303,0,0,string,False,See pinned SCHEMA.md
+claude_code_sessions,id,303,303,0,0,string,True,See pinned SCHEMA.md
+claude_code_sessions,sdk_session_id,303,303,0,0,string,False,See pinned SCHEMA.md
+claude_code_sessions,updated_at,303,303,0,0,string,False,See pinned SCHEMA.md
+claude_code_messages,agent_id,244820,244820,0,0,string,False,See pinned SCHEMA.md
+claude_code_messages,content,244820,244820,0,0,object,False,See pinned SCHEMA.md
+claude_code_messages,created_at,244820,244820,0,0,string,False,See pinned SCHEMA.md
+claude_code_messages,id,244820,244820,0,0,string,True,See pinned SCHEMA.md
+claude_code_messages,message_subtype,244820,244820,0,241419,null|string,False,See pinned SCHEMA.md
+claude_code_messages,message_type,244820,244820,0,0,string,False,See pinned SCHEMA.md
+claude_code_messages,message_uuid,244820,244820,0,244820,null,False,See pinned SCHEMA.md
+claude_code_messages,sdk_session_id,244820,244820,0,0,string,False,See pinned SCHEMA.md

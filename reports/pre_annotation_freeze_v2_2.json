@@ -1,0 +1,28 @@
+{
+  "status": "frozen_before_stage_a",
+  "v2_1_human_labels_detected": 0,
+  "holdout_semantic_content_opened": false,
+  "templates": {
+    "claim_slots_per_reviewer": 360,
+    "messages_per_reviewer": 120,
+    "blind_stage_a_packet_count": 60
+  },
+  "source_linked_strata": {
+    "development_sample_n": 60,
+    "construct_counts": {
+      "artifact_information_transfer_or_coordination": 15,
+      "directive_compliance_or_refusal": 20,
+      "possible_message_specific_claim_uptake": 2,
+      "possible_source_linked_claim_uptake": 23
+    },
+    "epistemic_entry_rule": "Only claim-bearing attribution/reference strata may enter L2; direct requests and artifact handoffs remain separate auxiliary constructs.",
+    "subtypes_reported_separately": true
+  },
+  "frozen_file_hashes": {
+    "research_spec_v2.2.md": "d3a465fc6657e6850306cc71254620a005e683586b2bacbec8328da677b3af65",
+    "docs\\holdout_sampling_plan_v2.2.json": "e087c4a108501f7b439d16b354206f5a3eaa68e0def67846709a054aa5ab9626",
+    "annotations\\v2_2\\annotation_codebook_v2.2.md": "824b9bb91e3890fcfb40d9b9208469defb6d9b8f5c55b3b31e302019d263e1c2",
+    "src\\memetic_village\\protocol_v2_2.py": "f59826caeb53c1b6ac8da8aa35f868677f720286d17dcb2fa535f6f5d4e4d00e"
+  },
+  "stage_b_release": "blocked_until_both_stage_a_reviewers_are_frozen"
+}

@@ -1,4 +1,11 @@
+# Historical initial research plan
+
+This is the preserved initial plan, including proposed milestones and retired v1 constructs. It is not a completion record or the current methodology. See [the README](../README.md), [the reviewer guide](reviewer_guide.md), and [the metric-retirement note](legacy_metric_retirement.md).
+
 \# AI Village Memetic-Spread Project Plan
+
+> **LEGACY V1 — INVALID PROXY.** This is the original plan and is retained only to preserve the
+> decision trail. The active observational contract is `research_spec_v2.md`.
 
 
 

@@ -1,0 +1,50 @@
+[project]
+name = "memetic-ai-village"
+version = "0.1.0"
+description = "Reproducible analysis of operational epistemic cascades in AI Village"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE", "NOTICE"]
+authors = [{name = "Luis Miguel Montoya Henao"}]
+requires-python = ">=3.11,<3.14"
+dependencies = [
+  "duckdb>=1.3.2,<2",
+  "huggingface-hub>=0.34,<2",
+  "numpy>=2.3,<3",
+  "pyarrow>=20,<22",
+  "pytz>=2025.2,<2027",
+  "tzdata>=2025.2",
+]
+
+[project.scripts]
+village-pipeline = "memetic_village.cli:main"
+
+[project.urls]
+Repository = "https://github.com/lmmontoya-ai/memetic-ai-village"
+Issues = "https://github.com/lmmontoya-ai/memetic-ai-village/issues"
+
+[dependency-groups]
+dev = [
+  "pytest>=8.4,<9",
+  "pyyaml>=6.0.3,<7",
+  "ruff>=0.12,<1",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/memetic_village"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--strict-markers"
+markers = [
+  "data: requires the approved local dataset and generated research artifacts; enable with --run-data",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = ["data/raw_manifest/snapshot"]

@@ -1,0 +1,295 @@
+{
+  "schema_version": 1,
+  "status": "preliminary_machine_development_annotation",
+  "scope": {
+    "development_units": 60,
+    "development_episode_clusters": 24,
+    "unique_source_agents": 17,
+    "unique_response_agents": 11,
+    "holdout_semantics_opened": false,
+    "source_linked_channel_development_sample_annotated": false,
+    "machine_annotation_not_human_ground_truth": true,
+    "known_public_incidents_in_primary_sample": 0
+  },
+  "stage_a": {
+    "marked_messages_per_judge": 120,
+    "maximum_claims_per_marked_message": 3,
+    "exhaustive_extraction_under_v2_2_contract": false,
+    "atomic_claim_counts": {
+      "fable_high": 289,
+      "sol_max": 308
+    },
+    "template_slot_counts": {
+      "fable_high": 360,
+      "sol_max": 360
+    }
+  },
+  "stage_a_to_b": {
+    "valid_pair_units": 11,
+    "valid_pair_episode_clusters": 6,
+    "fixed_claim_pairs": 19,
+    "pairing_outcome_counts": {
+      "claim_absent_on_one_or_both_message_roles": 7,
+      "claims_no_compatible_referent": 42,
+      "valid_claim_pair_available": 11
+    }
+  },
+  "retrieval_results": {
+    "broad_candidates": {
+      "selected_unit_count": 30,
+      "valid_claim_pair_yield": 0.2,
+      "valid_claim_pair_unit_count": 6,
+      "ascertainability_among_valid_pairs": 0.8333333333333334,
+      "positive_rate_conditional_on_ascertainability": 0.2,
+      "positive_lower_bound_among_valid_pairs": 0.16666666666666666,
+      "positive_upper_bound_among_valid_pairs": 0.3333333333333333,
+      "strict_consensus_positive_fraction_of_all_selected_units": 0.03333333333333333,
+      "unique_episode_cluster_count": 24,
+      "status_counts": {
+        "positive": 1,
+        "negative": 4,
+        "abstention_or_disagreement": 1,
+        "ineligible_no_valid_claim_pair": 24
+      },
+      "pairing_outcome_counts": {
+        "claim_absent_on_one_or_both_message_roles": 4,
+        "claims_no_compatible_referent": 20,
+        "valid_claim_pair_available": 6
+      }
+    },
+    "all_controls": {
+      "selected_unit_count": 30,
+      "valid_claim_pair_yield": 0.16666666666666666,
+      "valid_claim_pair_unit_count": 5,
+      "ascertainability_among_valid_pairs": 1.0,
+      "positive_rate_conditional_on_ascertainability": 0.0,
+      "positive_lower_bound_among_valid_pairs": 0.0,
+      "positive_upper_bound_among_valid_pairs": 0.0,
+      "strict_consensus_positive_fraction_of_all_selected_units": 0.0,
+      "unique_episode_cluster_count": 20,
+      "status_counts": {
+        "positive": 0,
+        "negative": 5,
+        "abstention_or_disagreement": 0,
+        "ineligible_no_valid_claim_pair": 25
+      },
+      "pairing_outcome_counts": {
+        "claim_absent_on_one_or_both_message_roles": 3,
+        "claims_no_compatible_referent": 22,
+        "valid_claim_pair_available": 5
+      }
+    },
+    "hard_controls": {
+      "selected_unit_count": 7,
+      "valid_claim_pair_yield": 0.14285714285714285,
+      "valid_claim_pair_unit_count": 1,
+      "ascertainability_among_valid_pairs": 1.0,
+      "positive_rate_conditional_on_ascertainability": 0.0,
+      "positive_lower_bound_among_valid_pairs": 0.0,
+      "positive_upper_bound_among_valid_pairs": 0.0,
+      "strict_consensus_positive_fraction_of_all_selected_units": 0.0,
+      "unique_episode_cluster_count": 7,
+      "status_counts": {
+        "positive": 0,
+        "negative": 1,
+        "abstention_or_disagreement": 0,
+        "ineligible_no_valid_claim_pair": 6
+      },
+      "pairing_outcome_counts": {
+        "claim_absent_on_one_or_both_message_roles": 0,
+        "claims_no_compatible_referent": 6,
+        "valid_claim_pair_available": 1
+      }
+    },
+    "ordinary_local_controls": {
+      "selected_unit_count": 13,
+      "valid_claim_pair_yield": 0.07692307692307693,
+      "valid_claim_pair_unit_count": 1,
+      "ascertainability_among_valid_pairs": 1.0,
+      "positive_rate_conditional_on_ascertainability": 0.0,
+      "positive_lower_bound_among_valid_pairs": 0.0,
+      "positive_upper_bound_among_valid_pairs": 0.0,
+      "strict_consensus_positive_fraction_of_all_selected_units": 0.0,
+      "unique_episode_cluster_count": 10,
+      "status_counts": {
+        "positive": 0,
+        "negative": 1,
+        "abstention_or_disagreement": 0,
+        "ineligible_no_valid_claim_pair": 12
+      },
+      "pairing_outcome_counts": {
+        "claim_absent_on_one_or_both_message_roles": 2,
+        "claims_no_compatible_referent": 10,
+        "valid_claim_pair_available": 1
+      }
+    },
+    "source_identity_placebos": {
+      "selected_unit_count": 7,
+      "valid_claim_pair_yield": 0.42857142857142855,
+      "valid_claim_pair_unit_count": 3,
+      "ascertainability_among_valid_pairs": 1.0,
+      "positive_rate_conditional_on_ascertainability": 0.0,
+      "positive_lower_bound_among_valid_pairs": 0.0,
+      "positive_upper_bound_among_valid_pairs": 0.0,
+      "strict_consensus_positive_fraction_of_all_selected_units": 0.0,
+      "unique_episode_cluster_count": 6,
+      "status_counts": {
+        "positive": 0,
+        "negative": 3,
+        "abstention_or_disagreement": 0,
+        "ineligible_no_valid_claim_pair": 4
+      },
+      "pairing_outcome_counts": {
+        "claim_absent_on_one_or_both_message_roles": 0,
+        "claims_no_compatible_referent": 4,
+        "valid_claim_pair_available": 3
+      }
+    },
+    "temporal_placebos": {
+      "selected_unit_count": 3,
+      "valid_claim_pair_yield": 0.0,
+      "valid_claim_pair_unit_count": 0,
+      "ascertainability_among_valid_pairs": null,
+      "positive_rate_conditional_on_ascertainability": null,
+      "positive_lower_bound_among_valid_pairs": null,
+      "positive_upper_bound_among_valid_pairs": null,
+      "strict_consensus_positive_fraction_of_all_selected_units": 0.0,
+      "unique_episode_cluster_count": 3,
+      "status_counts": {
+        "positive": 0,
+        "negative": 0,
+        "abstention_or_disagreement": 0,
+        "ineligible_no_valid_claim_pair": 3
+      },
+      "pairing_outcome_counts": {
+        "claim_absent_on_one_or_both_message_roles": 1,
+        "claims_no_compatible_referent": 2,
+        "valid_claim_pair_available": 0
+      }
+    }
+  },
+  "evidence_ladder": {
+    "L1_proposition_recurrence_episode_count": 1,
+    "L2_source_linked_recurrence_episode_count": 1,
+    "L3a_operational_convergence_episode_count": 0,
+    "L3b_source_linked_operational_cascade_episode_count": 1,
+    "L4a_persistent_recorded_claim_episode_count": 0,
+    "L4b_persistent_operational_assumption_episode_count": 0,
+    "L1_pair_count_inside_positive_episodes": 6
+  },
+  "reliability_diagnostics": {
+    "stage_b.proposition_equivalence": {
+      "n": 19,
+      "cluster_count": 6,
+      "raw_agreement": 0.9473684210526315,
+      "gwet_ac1": 0.9042821158690175,
+      "ac1_cluster_bootstrap_95_ci": {
+        "lower": 0.6000000000000001,
+        "upper": 1.0
+      }
+    },
+    "stage_b.recipient_stance": {
+      "n": 19,
+      "cluster_count": 6,
+      "raw_agreement": 0.9473684210526315,
+      "gwet_ac1": 0.9391999999999998,
+      "ac1_cluster_bootstrap_95_ci": {
+        "lower": 0.7250655530072228,
+        "upper": 1.0
+      }
+    },
+    "stage_b.explicit_source_link": {
+      "n": 19,
+      "cluster_count": 6,
+      "raw_agreement": 1.0,
+      "gwet_ac1": 1.0,
+      "ac1_cluster_bootstrap_95_ci": {
+        "lower": 1.0,
+        "upper": 1.0
+      }
+    },
+    "stage_b.evidence_lineage_class": {
+      "n": 19,
+      "cluster_count": 6,
+      "raw_agreement": 0.5789473684210527,
+      "gwet_ac1": 0.4918512327622232,
+      "ac1_cluster_bootstrap_95_ci": {
+        "lower": -0.19637462235649547,
+        "upper": 0.8958990536277602
+      }
+    },
+    "stage_c_full.claim_dependency": {
+      "n": 19,
+      "cluster_count": 6,
+      "raw_agreement": 0.8947368421052632,
+      "gwet_ac1": 0.8830769230769231,
+      "ac1_cluster_bootstrap_95_ci": {
+        "lower": 0.7100371747211897,
+        "upper": 1.0
+      }
+    },
+    "stage_c_full.execution_level": {
+      "n": 19,
+      "cluster_count": 6,
+      "raw_agreement": 0.7894736842105263,
+      "gwet_ac1": 0.7412031782065834,
+      "ac1_cluster_bootstrap_95_ci": {
+        "lower": 0.4005506815516601,
+        "upper": 0.9287722586691658
+      }
+    },
+    "stage_d.memory_meaning": {
+      "n": 19,
+      "cluster_count": 6,
+      "raw_agreement": 0.7894736842105263,
+      "gwet_ac1": 0.7469478357380689,
+      "ac1_cluster_bootstrap_95_ci": {
+        "lower": 0.3696969696969697,
+        "upper": 0.9282185273159144
+      }
+    },
+    "stage_d.third_party_restatement": {
+      "n": 19,
+      "cluster_count": 6,
+      "raw_agreement": 0.5263157894736842,
+      "gwet_ac1": 0.3946902654867256,
+      "ac1_cluster_bootstrap_95_ci": {
+        "lower": -0.4117647058823529,
+        "upper": 0.7524893314366998
+      }
+    }
+  },
+  "human_gate_1_passed": false,
+  "causal_peer_influence_tested": false,
+  "limitations": [
+    "Development sample with machine judgments; independent human validation is pending.",
+    "Extraction was capped at three claims per message, contrary to exhaustive v2.2 extraction.",
+    "Fable High is a run label with multiple observed model identifiers in its Stage-A manifest.",
+    "Sol Max used an interactive agent workflow; no standalone replay runner is included.",
+    "Only one hard control had a compatible claim pair; detector validity is unestablished.",
+    "The recipient was already inspecting the shared artifact before the source message.",
+    "Exact recipient prompts are absent; chronology and attribution do not identify causality."
+  ],
+  "dataset": {
+    "repository": "aidigestorg/ai-village",
+    "revision": "504ae8dc5fd254917c4ccbb071d932ad93b3584c"
+  },
+  "local_input_sha256": {
+    "reports/machine_annotation_preliminary_v2_2.json": "e10c65b41e02ad4a84823b99b30db80fb9ce713f9158cfb71260081b5547f6e7",
+    "annotations/v2_2/machine/fable_high/stage_a/claims.csv": "e80f533460d4ca6776491398333daefa6d2eb17455ce5e2a1adc5efc9985ad6a",
+    "annotations/v2_2/machine/fable_high/stage_a/message_classification.csv": "cc29d996c40644f73ac187f6a3fdf680368f5fca4382f7b73c6ddc2994b9e024",
+    "annotations/v2_2/machine/fable_high/stage_b/comparisons.csv": "ae0873764f878f620657bd3b8cd0dc4fb5508b6220972ec9c390d1b6a46ab5b8",
+    "annotations/v2_2/machine/fable_high/stage_c_full_audit/actions_full_trace_audit.csv": "7b1998f3f425b4d9eb37297f0b97c2221caa663ea46b10dce7616ae91e890bd1",
+    "annotations/v2_2/machine/fable_high/stage_d/memory_restatement.csv": "133587fe1d4a736c8577d92d9edbbd630ffbc03b8e72ca1ad0fe4571413ca9f6",
+    "annotations/v2_2/machine/sol_max/stage_a/claims.csv": "941a0a630f0a1d9248ad75352efcc9a1562e855e5e92acd0974548a06c279b60",
+    "annotations/v2_2/machine/sol_max/stage_a/message_classification.csv": "7fa7e4482ac7edb6800d0132e0d39cc058ff713ed8459f8c8a144805f6236845",
+    "annotations/v2_2/machine/sol_max/stage_b/comparisons.csv": "34bc0477a65eb321987d4d0cf5475da8e680d84a4ff0187da953a5387af80cea",
+    "annotations/v2_2/machine/sol_max/stage_c_full_audit/actions_full_trace_audit.csv": "3e394223961d4c16b5c67f3515af35ca8f45674ab3edee8b21b1b8d221b136cf",
+    "annotations/v2_2/machine/sol_max/stage_d/memory_restatement.csv": "58ad8204f70d8c00d8e767dc96e249e86347ae226018127d77816aec4a4fe367",
+    "annotations/v2_2/machine/combined/stage_b/stage_a_pairing_outcomes.csv": "124eb808052a943d19a46410a9616a87fd6871a5dcc6ecdd523f1cd967a114e5",
+    "annotations/v2_1/private/blinding_and_structural_key.csv": "0f59dbcd21789d527edd67c6ef6bb334e0bae5c3d5cee84025469530cead7530",
+    "episodes/development_units_v2_1.csv": "b7428fab26b1776a7e34d61f5ab95470a45e797d57d7a54b7c317cc6aff1d517",
+    "scripts/analyze_machine_annotations_v2_2.py": "1741626ed058bf1f7710272d7e1db7bd79aaa507e546b4e6888804624d54324f",
+    "scripts/export_public_results.py": "9f772f986f630aadb20351a1f406ff4caac6264f08b7653b51448b7e5303cbe3"
+  }
+}
